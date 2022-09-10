@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "buid only",
+      "type": "shell",
+      "args": [
+        "${workspaceRoot}\\gamemodes\\amz.pwn",
+        "-o${workspaceRoot}\\gamemodes\\amz.amx"
+      ],
+      "windows": {
+        "command": "${workspaceRoot}\\pawno\\pawncc.exe"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
